@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp1.DogLeafForward"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="DogLeafForward" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image Source="/images/2150687007.jpg" />
+        <Button x:Name="btnDog" Grid.Column="1" FontSize="36" ToolTip="Click here to feed your dog" Click="btnDog_Click">Feed doggy</Button>
+        <Image Grid.Column="0" Grid.Row="1" Source="/images/leaf.png" />
+        <Button x:Name="btnLeaf" Grid.Column="1" Grid.Row="1" FontSize="36" ToolTip="Click here to collect leaf" Click="btnLeaf_Click">Collect leaf</Button>
+    </Grid>
+</Window>

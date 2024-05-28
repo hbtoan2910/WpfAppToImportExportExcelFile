@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="2150687007.jpg" />
+    <None Remove="images\37226.jpg" />
+    <None Remove="images\cafe den.JPG" />
+    <None Remove="images\cafe sua.JPG" />
+    <None Remove="images\leaf.png" />
+    <None Remove="images\nuoc cam.JPG" />
+    <None Remove="images\nuoc chanh.JPG" />
+    <None Remove="tomato.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="7.1.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\2150687007.jpg" />
+    <Resource Include="images\37226.jpg" />
+    <Resource Include="images\cafe den.JPG" />
+    <Resource Include="images\cafe sua.JPG" />
+    <Resource Include="images\leaf.png" />
+    <Resource Include="images\nuoc cam.JPG" />
+    <Resource Include="images\nuoc chanh.JPG" />
+    <Resource Include="images\tomato.png" />
+  </ItemGroup>
+
+</Project>
